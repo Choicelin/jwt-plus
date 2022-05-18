@@ -23,8 +23,8 @@ type Algorithm struct {
 // NewHeader returns a new Header object.
 func (a *Algorithm) NewHeader() *Header {
 	return &Header{
-		Typ: "JWT",
-		Alg: a.algorithm,
+		typ: "JWT",
+		alg: a.algorithm,
 	}
 }
 
